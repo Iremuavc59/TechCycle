@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Ayarları - TechCycle</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">TechCycle</a>
+            </div>
+            <div class="nav-buttons">
+                <a href="/post-ad" class="btn-primary">
+                    <i class="fas fa-plus"></i> İlan Ver
+                </a>
+                <div class="profile-dropdown">
+                    <button class="btn-secondary">
+                        <i class="fas fa-user"></i> Profilim
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="account-container">
+        <div class="sidebar">
+            <div class="profile-info">
+                <div class="profile-icon">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h2 class="profile-name">Kullanıcı Adı</h2>
+                <p class="profile-email">kullanici@email.com</p>
+            </div>
+            <nav class="account-nav">
+                <a href="/profile" class="nav-item">
+                    <i class="fas fa-user"></i>
+                    <span>Profil Bilgileri</span>
+                </a>
+                <a href="/orders" class="nav-item">
+                    <i class="fas fa-box"></i>
+                    <span>Siparişlerim</span>
+                </a>
+                <a href="/favorites" class="nav-item">
+                    <i class="fas fa-heart"></i>
+                    <span>Favorilerim</span>
+                </a>
+                <a href="/settings" class="nav-item active">
+                    <i class="fas fa-cog"></i>
+                    <span>Hesap Ayarları</span>
+                </a>
+                <a href="/logout" class="nav-item logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Çıkış Yap</span>
+                </a>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Hesap Ayarları</h1>
+            
+            <div class="settings-section">
+                <h2>Kişisel Bilgiler</h2>
+                <form class="settings-form">
+                    <div class="form-group">
+                        <label>Ad Soyad</label>
+                        <input type="text" value="Ahmet Yılmaz">
+                    </div>
+                    <div class="form-group">
+                        <label>E-posta Adresi</label>
+                        <input type="email" value="kullanici@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Telefon Numarası</label>
+                        <input type="tel" value="+90 555 123 4567">
+                    </div>
+                    <button type="submit" class="btn-primary">Değişiklikleri Kaydet</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/navbar.js"></script>
+</body>
+</html> 

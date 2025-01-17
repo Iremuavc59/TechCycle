@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefonlar - TechCycle</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header aynı kalacak -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">TechCycle</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Ne aramıştınız?">
+                <button type="submit">
+                    <i class="fas fa-search"></i> Ara
+                </button>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn-primary">
+                    <i class="fas fa-plus"></i> İlan Ver
+                </button>
+                
+                <div class="profile-dropdown">
+                    <button class="btn-secondary">
+                        <i class="fas fa-user"></i> Profilim
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <script src="/js/filters.js"></script>
+
+    <main>
+        <!-- Filtreler için JavaScript -->
+
+        <!-- Filtreler -->
+        <aside class="filters">
+            <h2>Filtrele</h2>
+            <div class="filter-section">
+                <h3>Marka</h3>
+                <div class="filter-options" id="brandFilters">
+                    <label class="filter-option">
+                        <input type="checkbox" name="brand" value="apple">
+                        <span class="checkmark"></span>
+                        Apple
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="brand" value="samsung">
+                        <span class="checkmark"></span>
+                        Samsung
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="brand" value="xiaomi">
+                        <span class="checkmark"></span>
+                        Xiaomi
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="brand" value="huawei">
+                        <span class="checkmark"></span>
+                        Huawei
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="brand" value="oppo">
+                        <span class="checkmark"></span>
+                        Oppo
+                    </label>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Fiyat Aralığı</h3>
+                <div class="price-range">
+                    <input type="number" id="minPrice" placeholder="Min Fiyat" min="0">
+                    <input type="number" id="maxPrice" placeholder="Max Fiyat" min="0">
+                    <button id="applyPriceFilter">Uygula</button>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- Ürünler -->
+        <section class="products-container">
+            <h1>İkinci El Telefonlar</h1>
+            <div class="products-grid" id="phoneProducts">
+                
+            </div>
+        </section>
+    </main>
+
+    <script src="/js/phones.js"></script>
+    <script src="/js/filters.js"></script>
+    <script src="/js/navbar.js"></script>
+</body>
+</html> 

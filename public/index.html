@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCycle - İkinci El Teknoloji</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">TechCycle</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Ne aramıştınız?">
+                <button type="submit">
+                    <i class="fas fa-search"></i> Ara
+                </button>
+            </div>
+            <div class="nav-buttons">
+                <a href="/post-ad" class="btn-primary">
+                    <i class="fas fa-plus"></i> İlan Ver
+                </a>
+                
+                <div class="profile-dropdown">
+                    <button class="btn-secondary">
+                        <i class="fas fa-user"></i> Profilim
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>İkinci El Teknolojide Güvenilir Adres</h1>
+                <p>Uygun fiyata kaliteli teknoloji ürünleri</p>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories">
+            <h2>Kategoriler</h2>
+            <div class="category-cards">
+                <a href="/phones" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Telefonlar</h3>
+                        <p>En yeni modeller</p>
+                    </div>
+                </a>
+                <a href="/computers" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Bilgisayarlar</h3>
+                        <p>Güçlü performans</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <h2>Öne Çıkan Ürünler</h2>
+                <div id="featuredProducts" class="products-grid">
+                    <!-- Ürünler JavaScript ile buraya eklenecek -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TechCycle</h3>
+                <p>Güvenilir ikinci el teknoloji alım satım platformu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Bağlantılar</h3>
+                <ul>
+                    <li><a href="/phones">Telefonlar</a></li>
+                    <li><a href="/computers">Bilgisayarlar</a></li>
+                    <li><a href="/about">Hakkımızda</a></li>
+                    <li><a href="/contact">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechCycle. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="/js/home.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/navbar.js"></script>
+</body>
+</html> 

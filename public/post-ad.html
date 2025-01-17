@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlan Ver - TechCycle</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">TechCycle</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Ne aramıştınız?">
+                <button type="submit">
+                    <i class="fas fa-search"></i> Ara
+                </button>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn-primary">
+                    <i class="fas fa-plus"></i> İlan Ver
+                </button>
+                
+                <div class="profile-dropdown">
+                    <button class="btn-secondary">
+                        <i class="fas fa-user"></i> Profilim
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="post-ad-main">
+        <h1>İlan Ver</h1>
+        <form id="postAdForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="title">Başlık</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Açıklama</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="price">Fiyat</label>
+                <input type="number" id="price" name="price" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Kategori</label>
+                <select id="category" name="category" required>
+                    <option value="phone">Telefonlar</option>
+                    <option value="computer">Bilgisayarlar</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="brand">Marka</label>
+                <select id="brand" name="brand" required>
+                    <option value="">Marka Seçin</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Xiaomi">Xiaomi</option>
+                    <option value="Huawei">Huawei</option>
+                    <option value="Lenovo">Lenovo</option>
+                    <option value="HP">HP</option>
+                    <option value="Dell">Dell</option>
+                    <option value="Asus">Asus</option>
+                    <option value="Diğer">Diğer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="image">Resim</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn-primary">İlanı Yayınla</button>
+        </form>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TechCycle</h3>
+                <p>Güvenilir ikinci el teknoloji alım satım platformu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Bağlantılar</h3>
+                <ul>
+                    <li><a href="/phones">Telefonlar</a></li>
+                    <li><a href="/computers">Bilgisayarlar</a></li>
+                    <li><a href="/about">Hakkımızda</a></li>
+                    <li><a href="/contact">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechCycle. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="/js/post-ad.js"></script>
+    <script src="/js/navbar.js"></script>
+</body>
+</html> 
